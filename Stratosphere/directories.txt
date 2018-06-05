@@ -1,0 +1,6 @@
+/Monitoring/example/Welcome.action
+/Monitoring/example/Register.action
+/Monitoring/example/Login.action
+/Monitoring/example/Menu.action
+
+/manager/html
