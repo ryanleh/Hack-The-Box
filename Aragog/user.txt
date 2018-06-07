@@ -1,3 +1,0 @@
-EZsetup
-web
-postgres
