@@ -1,2 +1,0 @@
-cposix
-%0Asystem%0Ap1%0A%28S%27ls%27%0Ap2%0Atp3%0ARp4%0A.
