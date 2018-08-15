@@ -1,0 +1,9 @@
+# Nmap 7.70 scan initiated Tue Aug 14 10:06:46 2018 as: nmap -sV -Pn -p 5435 -oN namp_5435 10.10.10.102
+Nmap scan report for 10.10.10.102
+Host is up (0.075s latency).
+
+PORT     STATE SERVICE    VERSION
+5435/tcp open  tcpwrapped
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 14 10:06:47 2018 -- 1 IP address (1 host up) scanned in 0.81 seconds
