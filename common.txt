@@ -1,3 +1,0 @@
-nmap -sC -sS -sV -oN nmap IP
-gobuster -u "URL" -w
-/usr/share/wordlists/dirbuster/directory-list-2.3-medium.text
